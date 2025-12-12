@@ -1,0 +1,16 @@
+[project]
+name = "clarity-4-modular-dao"
+description = "A modular DAO showcasing Clarity 4.0 traits."
+authors = ["Your Name <your.email@example.com>"]
+telemetry = true
+requirements = [
+  "SP000000000000000000002Q6VF78.ft-trait",
+]
+
+[contracts]
+"governance-token" = { path = "contracts/governance-token.clar" }
+"delegation-module" = { path = "contracts/delegation-module.clar" }
+"core-dao" = { path = "contracts/core-dao.clar" }
+
+[traits]
+"can-vote" = { path = "traits/can-vote.clar" }
